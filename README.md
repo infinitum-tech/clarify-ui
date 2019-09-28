@@ -3,6 +3,8 @@ A set of javascript and CSS libraries for simplifying UI design.
 
 Clarify UI has three components for interactions: a menu, a modal box, and a confirmation dialog. Each of the components is controlled by a javascript function.
 
+Clarify UI also has support for dark and light themes by including the appropriate CSS file.
+
 ## Menu ##
 
 The menu component can be used by the clarifyMenu function.
