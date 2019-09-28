@@ -1,7 +1,7 @@
 # Clarify UI #
 A set of javascript and CSS libraries for simplifying UI design.
 
-Clarify UI has three components for interactions: a menu, a modal box, and a confirmation dialog. Each of the components is controlled by a javascript function.
+Clarify UI has three components for interactions: a menu, a modal box, a disabled class, and a confirmation dialog. Each of the components is controlled by a javascript function.
 
 Clarify UI also has support for dark and light themes by including the appropriate CSS file.
 
@@ -60,3 +60,11 @@ The rejected parameter is a callback function which is called when the rejection
 #### Example Usage ####
 
     clarifyConfirm("<h1>Yes or no?</h1>",confirmedFunction, rejectedFunction);
+
+## Disabled ##
+
+The disabled CSS class prevents mouse events on an element and provides disabled styling.
+
+#### Example Usage ####
+
+    <button class="disabled">Unclickable</button>
