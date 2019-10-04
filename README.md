@@ -3,7 +3,13 @@ A set of javascript and CSS libraries for simplifying UI design.
 
 Clarify UI has three components for interactions: a menu, a modal box, a disabled class, and a confirmation dialog. Each of the components is controlled by a javascript function.
 
+Besides the functions for creating user interface components, it also includes the pressed method for executing a function when an element has been pressed with the mouse for a certain amount of time.
+
 Clarify UI also has support for dark and light themes by including the appropriate CSS file.
+
+
+# UI Elements #
+
 
 ## Menu ##
 
@@ -68,3 +74,23 @@ The disabled CSS class prevents mouse events on an element and provides disabled
 #### Example Usage ####
 
     <button class="disabled">Unclickable</button>
+
+
+# Javascript framework functions #
+
+
+## Pressed Method ##
+
+The pressed method can be called on any html element to trigger a function when the element has been clicked for a certain amount of time.
+
+#### Pressed Syntax ####
+
+    element.pressed(time,callback);
+    
+The time parameter specifies the amount of time before the function is called.
+
+The callback parameter specifies the callback to be executed when the amount of time has been reached.
+
+#### Example Usage ####
+
+    element.pressed(2000, exampleFunction);
