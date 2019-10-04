@@ -150,21 +150,15 @@ sidenav.style.boxShadow="none";
 }
 
 HTMLElement.prototype.pressed = function(time,callback){
-  var mouseStatus = 'up';
-  var mouseTimeout;
 
   this.addEventListener("mousedown",function() {
       clearTimeout(mouseTimeout);
-      mouseStatus='down';
-      mouseTimeout = setTimeout(function(){
-          mouseStatus='longDown';
+var   mouseTimeout = setTimeout(function(){
           callback();
       }, time);
   }, false);
   this.addEventListener("mouseup",function() {
       clearTimeout(mouseTimeout);
-      mouseStatus='up';
   }, false);
 
 }
-
