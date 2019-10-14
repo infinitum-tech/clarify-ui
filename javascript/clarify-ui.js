@@ -150,15 +150,19 @@ sidenav.style.boxShadow="none";
 }
 
 HTMLElement.prototype.pressed = function(time,callback){
-
-  this.addEventListener("mousedown",function() {
-      clearTimeout(mouseTimeout);
-var   mouseTimeout = setTimeout(function(){
-          callback();
-      }, time);
-  }, false);
-  this.addEventListener("mouseup",function() {
-      clearTimeout(mouseTimeout);
-  }, false);
-
+    
+    var timeOut;
+    
+    this.addEventListener("mousedown",function(){
+        
+    timeOut = setTimeout(callback,time);  
+        
+    this.addEventListener("mouseup",function(){
+       
+       clearTimeout(timeOut); 
+        
+    });
+        
+    });
+    
 }
