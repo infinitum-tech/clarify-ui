@@ -131,3 +131,36 @@ margin:5px;
 .clarify-sidenav .clarify-closebtn:hover{
 color:rgb(20,20,20);
 }
+
+.clarify-toggle {
+  font-size:inherit;
+  -webkit-appearance: none;
+  width:calc(2em - 3px);
+  height: 1em;
+  display: inline-block;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(170,170,170);
+  transition: all ease 0.3s;
+  margin:0px;
+}
+
+.clarify-toggle:before {
+  content: "";
+  display: block;
+  width: calc(1em - 6px);
+  height: calc(1em - 6px);
+  background: rgb(255,255,255);
+  border-radius: 50%;
+  transition: all 0.3s;
+  margin:3px;
+}
+
+.clarify-toggle:checked {
+  background-color: rgb(45, 145, 245);
+}
+
+.clarify-toggle:checked:before {
+  margin-left: 1em;
+}
