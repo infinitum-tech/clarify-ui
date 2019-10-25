@@ -1,7 +1,9 @@
 # Clarify UI #
 A set of javascript and CSS libraries for simplifying UI design.
 
-Clarify UI has three components for interactions: a menu, a modal box, a disabled class, and a confirmation dialog. Each of the components is controlled by a javascript function.
+Clarify UI has three components for interactions: a menu, a modal box, and a confirmation dialog. Each of the components is controlled by a javascript function.
+
+The CSS classes contained in Clarify UI are a disabled class and toggle switch.
 
 Besides the functions for creating user interface components, it also includes the pressed method for executing a function when an element has been pressed with the mouse for a certain amount of time.
 
@@ -74,6 +76,15 @@ The disabled CSS class prevents mouse events on an element and provides disabled
 #### Example Usage ####
 
     <button class="disabled">Unclickable</button>
+
+
+## Toggle ##
+
+The clarify-toggle CSS class transforms an input element into a toggle switch.
+
+#### Example Usage ####
+
+    <input type="checkbox" class="clarify-toggle"> 
 
 
 # Javascript framework functions #
