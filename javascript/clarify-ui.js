@@ -88,7 +88,7 @@ modals[i].parentNode.remove();
 
 
 
-function clarifyMenu(openNode,htmlContent,width,direction){
+function clarifyMenu(openNode,htmlContent,width,direction,closeOnClick){
 
 var sidenav = document.createElement("div");
 sidenav.innerHTML = htmlContent;
@@ -147,22 +147,31 @@ sidenav.style.boxShadow="none";
 }
 }
 
+if(closeOnClick){
+var menuChildNodes = sidenav.childNodes;
+for(var i=0;i<menuChildNodes.length;i++){
+  menuChildNodes[i].addEventListener("click",closeNav);
+}
 }
 
+
+}
+
+
 HTMLElement.prototype.pressed = function(time,callback){
-    
+
     var timeOut;
-    
+
     this.addEventListener("mousedown",function(){
-        
-    timeOut = setTimeout(callback,time);  
-        
+
+    timeOut = setTimeout(callback,time);
+
     this.addEventListener("mouseup",function(){
-       
-       clearTimeout(timeOut); 
-        
+
+       clearTimeout(timeOut);
+
     });
-        
+
     });
-    
+
 }
