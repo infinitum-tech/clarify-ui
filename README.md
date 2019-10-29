@@ -19,7 +19,7 @@ The menu component can be used by the clarifyMenu function.
 
 #### Menu Syntax ####
 
-    clarifyMenu(openNode,htmlContent,width,direction);
+    clarifyMenu(openNode,htmlContent,width,direction,closeOnClick);
     
 The openNode parameter specifies the html element to serve as the button to open the menu.
 
@@ -29,11 +29,13 @@ The width parameter specifies the width of the menu in pixels.
 
 The direction parameter specifies the direction for the menu to slide in from. Possible values are "right" and "left".
 
+The closeOnClick parameter is a boolean specifying whether to close the menu when one of its content elements is clicked.
+
 #### Example Usage ####
 
     var openButton = document.getElementById("button");
     
-    clarifyMenu(openButton, "<h1>Title</h1> <h2>Subcontent</h2>", 400, "left");
+    clarifyMenu(openButton, "<h1>Title</h1> <h2>Subcontent</h2>", 400, "left", true);
     
 ## Modal ##
 
