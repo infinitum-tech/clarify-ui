@@ -5,6 +5,4 @@ Clarify UI has three types of user interface components: CSS classes to add styl
 
 Clarify UI is lightweight, with no external dependencies.
 
-Clarify UI also has support for dark and light themes by including the appropriate CSS file.
-
 For documentation, see the [wiki](https://github.com/infinitum-tech/clarify-ui/wiki).
