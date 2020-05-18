@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<style>
+
+body{
+  font-family:sans-serif;
+}
+
+.menu-content{
+  text-indent:30px;
+}
+
+</style>
+
+<link rel="stylesheet" href="css/clarify-ui.css">
+
+</head>
+<body>
+
+<h1>CSS Classes</h1>
+<h2>Toggle Switch</h2>
+
+<input type="checkbox" class="clarify-toggle" style="font-size:25px">
+
+<h2>Button</h2>
+
+<button class="clarify-button">Button</button>
+
+<h2>Card</h2>
+
+<div class="clarify-card">
+<h2>Rounded card</h2>
+<p>Lorem ipsum dolor sit amet . . .</p>
+</div>
+
+<h2>Disabled</h2>
+
+<button class="clarify-button clarify-disabled">Unclickable</button>
+
+<h1>Javascript Functions</h1>
+
+<h2>Confirm Function</h2>
+
+<button class="clarify-button" onclick="clarifyConfirm('<h1>Yes or no?</h1>',function(){alert('Yes')}, function(){alert('No')});">Confirm</button>
+
+<h2>Modal Function</h2>
+
+<button class="clarify-button" onclick="modal()">Modal</button>
+
+<h2>Date Picker</h2>
+
+<textarea id="datepicker"></textarea>
+
+<script src="javascript/clarify-ui.js"></script>
+
+<script>
+
+document.getElementById("datepicker").clarifyDatePicker(2020,8,"yy-mm-dd");
+
+var newModal = new ClarifyModal();
+newModal.content.innerHTML="<p>Lorem ipsum dolor sit amet . . .</p>";
+
+function modal(){
+  newModal.open();
+}
+
+</script>
+
+</body>
+</html>
